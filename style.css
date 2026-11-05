@@ -23,6 +23,13 @@ header {
   padding: 24px;
 }
 
+section {
+  background-color: #fff;
+  padding: 24px;
+  margin: 24px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
 /*Headers*/
 h1 {
   color: #2c075e;

@@ -1,10 +1,16 @@
 /* Feuille de style de la page « Le poids caché du web » */
 
+html {
+  min-height: 100%;
+  background: linear-gradient(70deg, rgb(161, 70, 131), rgb(255, 192, 203));
+}
+
 body {
   font-family: "Times New Roman", serif;
-  color: #e5d7f1;
-  .degrade-diagonal {
-  background: linear-gradient(70deg, rgb(97, 35, 76), rgb(255, 192, 203));
-    }
+  color: #030005;
+  max-width: 800px;
+  max-height: fit-content;
+  margin: 0 auto;
+  padding: 24px;
   line-height: 1.5;
 }

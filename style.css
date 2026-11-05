@@ -14,3 +14,17 @@ body {
   padding: 24px;
   line-height: 1.5;
 }
+
+h1 {
+  color: #2c075e;
+  font-size: 2.5em;
+  margin-bottom: 16px;
+}
+h2 {
+  color: #24001d;
+}
+
+h2 {
+  border-bottom: 1px solid #040246;
+  padding-bottom: 8px;
+}

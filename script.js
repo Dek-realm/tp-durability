@@ -4,6 +4,47 @@ const valeurTaille = document.querySelector("#valeur-taille");
 const POIDS_PAGE_MO = 2;
 const champPages = document.querySelector("#pages-par-jour");
 const resultat = document.querySelector("#resultat");
+const questions = [
+  {
+    question: "En quelle année la première page web a-t-elle été publiée ?",
+    choix: ["1969", "1991", "2005"],
+    bonne: 1
+  },
+  {
+    question: "Quel est le poids approximatif d'une page web typique aujourd'hui ?",
+    choix: ["2 Ko", "2 Mo", "2 Go"],
+    bonne: 1
+  },
+  {
+    question: "Où les pages web sont-elles stockées ?",
+    choix: ["Dans des centres de données", "Dans les câbles sous-marins", "Dans les écrans"],
+    bonne: 0
+  }
+];
+const zone = document.querySelector("#zone-quiz");
+
+for (let indexQuestion = 0; indexQuestion < questions.length; indexQuestion++) {
+  const question = questions[indexQuestion];
+  const texteQuestion = document.createElement("p");
+  texteQuestion.textContent = question.question;
+  zone.append(texteQuestion);
+
+  const retour = document.createElement("p");
+  zone.append(retour);
+
+  for (let indexChoix = 0; indexChoix < question.choix.length; indexChoix++) {
+    const boutonChoix = document.createElement("button");
+    boutonChoix.type = "button";
+    boutonChoix.textContent = question.choix[indexChoix];
+    boutonChoix.addEventListener("click", () => {
+      retour.textContent = indexChoix === question.bonne
+        ? "Bonne réponse !"
+        : "Mauvaise réponse, réessayez.";
+    });
+    zone.append(boutonChoix);
+  }
+}
+
 const heure = new Date().getHours();
 const salutation = document.querySelector("#salutation");
 

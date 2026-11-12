@@ -75,3 +75,74 @@ table {
   width: 100%;
   margin-bottom: 24px;
 }
+.outils {
+ position: fixed;
+ top: 12px;
+ right: 12px;
+ z-index: 1000;
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+ padding: 10px;
+ background-color: white;
+ border-radius: 8px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.sombre {
+  background: #111c1b;
+}
+
+.sombre body {
+  background-color: #111c1b;
+  color: #e2ebe9;
+}
+
+.sombre header {
+  background-color: #392b45;
+}
+
+.sombre section {
+  background-color: #202b2a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.sombre h1,
+.sombre h2 {
+  color: #a9e3d8;
+}
+
+.sombre h2 {
+  border-bottom-color: #7fd1c3;
+}
+
+.sombre a {
+  color: #a9d8ff;
+}
+
+.sombre a:hover {
+  color: #ffd1dc;
+}
+
+.sombre th {
+  background-color: #68434f;
+}
+
+.sombre td {
+  background-color: #354442;
+}
+
+.sombre table {
+  border-color: #7fd1c3;
+}
+
+.sombre .outils {
+  background-color: #202b2a;
+  color: #e2ebe9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sombre button {
+  background-color: #354442;
+  color: #e2ebe9;
+  border: 1px solid #7fd1c3;
+}
